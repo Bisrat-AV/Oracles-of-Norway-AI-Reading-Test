@@ -1,4 +1,4 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from typing import List
 
 class CardBase(BaseModel):
@@ -7,9 +7,7 @@ class CardBase(BaseModel):
 
 class Card(CardBase):
     id: int
-
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
 
 class DeckBase(BaseModel):
     name: str
@@ -17,6 +15,9 @@ class DeckBase(BaseModel):
 class Deck(DeckBase):
     id: int
     cards: List[Card] = []
+    model_config = ConfigDict(from_attributes=True)
 
-    class Config:
-        orm_mode = True
+class ReadingRequest(BaseModel):
+    deck_name: str
+    card_names: List[str]
+    alpha: float = 0.5

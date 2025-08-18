@@ -7,3 +7,8 @@ markdown
 sqlalchemy
 fastapi
 uvicorn
+pinecone
+sentence-transformers
+openai
+scikit-learn
+numpy<2.0

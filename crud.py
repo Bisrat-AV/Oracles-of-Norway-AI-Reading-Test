@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from db import models
-from . import schemas
+import schemas
 
 def get_deck(db: Session, deck_id: int):
     return db.query(models.Deck).filter(models.Deck.id == deck_id).first()
