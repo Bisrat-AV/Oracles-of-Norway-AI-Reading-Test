@@ -14,7 +14,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from db.database import engine
 from db.models import Base
-from crud import create_deck, create_card
+# No need to import crud functions - we'll create decks directly
 from sqlalchemy.orm import sessionmaker
 
 def init_database():
