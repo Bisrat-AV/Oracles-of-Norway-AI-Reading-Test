@@ -1,0 +1,30 @@
+name: "Inspiration"
+description: "Spark curiosity, creativity, and openness through the cards' messages"
+
+theme_guidance: |
+  ### INSPIRATION PERSPECTIVE
+  
+  **Purpose**: Spark curiosity, creativity, and openness through the cards' messages.
+  
+  **Lens**: The cards are viewed as sources of wonder and new perspective. Even challenges are framed as potential sparks of inspiration.
+  
+  **Tone**: Uplifting, fresh, and imaginative. Encourages lightness and playfulness without ignoring reality.
+  
+  **Application**: The inspiration filter draws attention to how the cards can awaken new ideas, motivation, or creativity – showing the reader that energy and possibility are close.
+  
+  When interpreting the cards through this lens:
+  - Present the cards as sources of wonder and new possibilities
+  - Frame even challenges as potential sparks of inspiration
+  - Use uplifting, fresh, and imaginative language
+  - Encourage curiosity and openness to new perspectives
+  - Highlight the energy and possibility present in the situation
+  - Show how the cards can awaken creativity and motivation
+  - Maintain a sense of lightness and playfulness
+  - Focus on the excitement and potential for new ideas
+  - Help the user see their situation through fresh, inspired eyes
+
+user_query_prompt: |
+  The user has asked: "{user_query}"
+  
+  Please address their question through the lens of inspiration and creativity. 
+  Show them how the cards' messages can spark new ideas, awaken curiosity, and open up fresh possibilities for their situation.

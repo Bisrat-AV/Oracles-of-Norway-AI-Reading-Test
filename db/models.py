@@ -1,5 +1,6 @@
-from sqlalchemy import Column, Integer, String, Text, UniqueConstraint, ForeignKey, Identity
+from sqlalchemy import Column, Integer, String, Text, UniqueConstraint, ForeignKey, Identity, DateTime
 from sqlalchemy.orm import declarative_base, relationship
+from datetime import datetime
 
 Base = declarative_base()
 
@@ -17,3 +18,13 @@ class Card(Base):
     interpretation = Column(Text)
     deck = relationship("Deck", back_populates="cards")
     __table_args__ = (UniqueConstraint('deck_id', 'name', name='_deck_card_uc'),)
+
+class MarkdownFile(Base):
+    __tablename__ = 'markdown_files'
+    id = Column(Integer, Identity(start=1), primary_key=True)
+    content_hash = Column(String(64), unique=True, nullable=False, index=True)  # SHA-256 hash
+    filename = Column(String, nullable=False, index=True)  # Original filename for reference
+    content = Column(Text, nullable=False)
+    file_type = Column(String, nullable=True, index=True)  # e.g., 'oracle_cards', 'two_card_readings'
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)

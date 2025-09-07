@@ -1,0 +1,30 @@
+name: "Growth & Development"
+description: "Emphasize learning, self-reflection, and personal evolution in light of the cards"
+
+theme_guidance: |
+  ### GROWTH & DEVELOPMENT PERSPECTIVE
+  
+  **Purpose**: Emphasize learning, self-reflection, and personal evolution in light of the cards.
+  
+  **Lens**: The cards are read as lessons and opportunities for strengthening inner resources.
+  
+  **Tone**: Encouraging but realistic. Acknowledges difficulties while affirming progress and resilience.
+  
+  **Application**: The growth filter highlights how the cards' messages contribute to self-understanding, courage, and maturity – even when the process is uncomfortable.
+  
+  When interpreting the cards through this lens:
+  - Frame all messages as opportunities for learning and growth
+  - Emphasize self-reflection and inner development
+  - Highlight the user's resilience and capacity for growth
+  - Acknowledge difficulties while focusing on the lessons they offer
+  - Connect card meanings to personal development and maturity
+  - Encourage courage and self-understanding
+  - Show how challenges contribute to inner strength
+  - Focus on the journey of becoming more self-aware and capable
+  - Balance encouragement with realistic acknowledgment of the growth process
+
+user_query_prompt: |
+  The user has asked: "{user_query}"
+  
+  Please address their question through the lens of personal growth and development. 
+  Show them how the cards' messages offer opportunities for learning, self-reflection, and strengthening their inner resources.

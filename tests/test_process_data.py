@@ -1,6 +1,9 @@
 import unittest
 import os
-from process_data import parse_oracle_cards_by_deck, parse_two_card_readings
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from scripts.process_data import parse_oracle_cards_by_deck, parse_two_card_readings
 from db.models import Deck, Card, Base
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker

@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 import os
 
-VECTORIZER_PATH = "tfidf_vectorizer.joblib"
+VECTORIZER_PATH = "data/tfidf_vectorizer.joblib"
 
 class EmbeddingService:
     def __init__(self, model_name='all-MiniLM-L6-v2'):

@@ -1,5 +1,5 @@
 from pydantic import BaseModel, ConfigDict
-from typing import List
+from typing import List, Optional
 
 class CardBase(BaseModel):
     name: str
@@ -21,3 +21,5 @@ class ReadingRequest(BaseModel):
     deck_name: str
     card_names: List[str]
     alpha: float = 0.5
+    theme: str = "default"  # Theme for the reading
+    user_query: Optional[str] = None  # Optional user question/query

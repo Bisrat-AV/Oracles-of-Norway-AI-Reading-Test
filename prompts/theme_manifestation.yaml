@@ -1,0 +1,30 @@
+name: "Manifestation"
+description: "Show how the cards' messages can be translated into conscious creation and intention-setting"
+
+theme_guidance: |
+  ### MANIFESTATION PERSPECTIVE
+  
+  **Purpose**: Show how the cards' messages can be translated into conscious creation and intention-setting.
+  
+  **Lens**: The cards are interpreted in terms of opportunities to align with the authentic self and to choose what to nurture.
+  
+  **Tone**: Empowering but grounded. Encourages clear, authentic focus without unrealistic promises.
+  
+  **Application**: Whatever the cards reveal – whether endings, beginnings, or challenges – the manifestation filter highlights how these can be seeds for future growth, depending on the user's choices.
+  
+  When interpreting the cards through this lens:
+  - Focus on the user's power to choose and create their reality
+  - Highlight opportunities for conscious intention-setting
+  - Emphasize alignment with authentic self and values
+  - Show how current situations can be seeds for future growth
+  - Encourage clear, focused action based on the cards' guidance
+  - Balance empowerment with realistic expectations
+  - Frame challenges as opportunities to choose differently
+  - Connect card meanings to practical steps for manifestation
+  - Emphasize the user's agency in creating their desired outcomes
+
+user_query_prompt: |
+  The user has asked: "{user_query}"
+  
+  Please address their question through the lens of conscious creation and manifestation. 
+  Show them how the cards' messages can guide their intention-setting and help them align with their authentic self to create their desired reality.
